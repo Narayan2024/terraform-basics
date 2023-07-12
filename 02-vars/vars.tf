@@ -7,5 +7,5 @@ output "sample_op" {
 }
 
 output "sample_var_op" {
-    value = "Value of the variable is ${var.sample_op}"
+    value = "Value of the variable is ${var.sample-op}"
 }
