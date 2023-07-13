@@ -19,8 +19,8 @@ variable "example_list" {
         "AWS",
         "DevOps",
          55,
-         "Trainer"
-         "Terraform"
+         "Trainer",
+         "Terraform",
     ]
 }
 
