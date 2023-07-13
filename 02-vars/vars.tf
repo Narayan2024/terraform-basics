@@ -29,4 +29,19 @@ variable "example_list" {
 output "example_list_op" {
     value = "Welcome to ${var.example_list[1]} with ${var.example_list[0]} training and this is our batch ${var.example_list[2]} and the current topic is ${var.example_list[4]}" 
 
-    }
+}
+
+# What is map variable? A variable with multiple value key pairs.
+
+variable "example_map" {
+    default = {
+        Batch    = "B55"
+        Training = "DevOpswithAWS"
+        Mode     = "Online"
+    }    
+}
+
+output "example_map.op" {
+    value = "We are learning ${var.example_map[Training] and part of {var.example_map[Batch]} through {var.example_map[Mode] mode}"
+    
+}
