@@ -41,6 +41,6 @@ variable "example_map" {
     }    
 }
 
-output "example_map.op" {
+output "example_map_op" {
     value = "We are learning ${var.example_map[Training]} and part of {var.example_map[Batch]} through {var.example_map[Mode] mode}"
 }
