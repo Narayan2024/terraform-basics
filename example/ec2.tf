@@ -1,9 +1,8 @@
-resource "aws_instance" "server" {
-  ami                     = "ami-0c1d144c8fdd8d690"
-  instance_type           = "t3.nano"
-  vpc_security_group_ids  = [aws_security_group.allow_all.id]
+resource "aws_instance" "web" {
+  ami           = "ami-0edcd33c11a89dfa6"
+  instance_type = "t2.micro"
 
   tags = {
-    Name = "TerraformServer"
+    Name = "HelloWorld"
   }
 }
