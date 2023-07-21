@@ -3,6 +3,6 @@ resource "aws_instance" "remote-app" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "Terraform-server-with-remotebackend"
+    Name = "TTTTerraform-server-with-remotebackend"
   }
 }
