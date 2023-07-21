@@ -8,7 +8,7 @@ resource "aws_instance" "app" {
   }
 }
 
-# create securit group
+# create security group
 
 resource "aws_security_group" "allow_tls" {
   name        = "allow_tls"
