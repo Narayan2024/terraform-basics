@@ -8,5 +8,5 @@ module "sg" {
 }
 
 output "private_ip_address" {
-    value = aws_instance.server.private_ip
+    value = module.ec2.public_ip
 }
