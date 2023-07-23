@@ -23,7 +23,7 @@ resource "aws_security_group" "allows_tls" {
   }
 }
 
-#Step1 : Declaring the output that which we will pass to the root module
+# Step1 : Declaring the output that which we will pass to the root module
 
 output "sgid" {
     value = aws_security_group.allows_all.id
