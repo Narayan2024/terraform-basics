@@ -1,4 +1,4 @@
-resource "aws_security_group" "allows_tls" {
+resource "aws_security_group" "allows_all" {
   name        = "allows_tls"
   description = "Allows TLS inbound traffic"
  
