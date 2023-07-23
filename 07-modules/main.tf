@@ -1,5 +1,12 @@
-module "servers" {
+module "ec2" {
   source = "./ec2"
+  sg     = module.sg.sgid                    #Step 2 :pass the output declared in the source module to this root module
+}
 
-  servers = 5
+module "sg" {
+  source = "./sg"
+}
+
+output "private_ip_address" {
+    value = aws_instance.server.private_ip
 }
