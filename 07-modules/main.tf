@@ -7,6 +7,6 @@ module "sg" {
   source = "./sg"
 }
 
-output "private_ip_address" {
+output "public_ip_address" {
     value = module.ec2.public_ip
 }
