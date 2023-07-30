@@ -10,6 +10,7 @@ resource "aws_spot_instance_request" "spot_worker" {
   }
 
 #   # This will be executed on the top of the machine once it's created
+ 
   provisioner "remote-exec" {
 
     # connection block establishes connection to this
